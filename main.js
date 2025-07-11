@@ -32,7 +32,7 @@ function renderLanding() {
               <div class="landing__param-value">Бесплатно, если не пользоваться</div>
             </div>
             <div>
-              <div class="landing__param-label">С каждого использования</div>
+              <div class="landing__param-label">Стоимость использования</div>
               <div class="landing__param-value">249 ₽ за каждый раз</div>
             </div>
           </div>
