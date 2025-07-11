@@ -12,7 +12,7 @@ function renderLanding() {
       <div class="landing__content">
         <div class="landing__title">Зарплата каждый день. Подключите бесплатно, платите только за использование</div>
         <div class="landing__desc">
-          Получать заработанные деньги теперь можно хоть каждый день — не нужно ждать зарплату или аванс
+          Подключите бесплатно, платите только за использование
         </div>
         <ul class="landing__list">
           <li><img src="img/rub-flag.svg" class="landing__list-icon" alt="Рубль" />Взять деньги можно в счёт будущей зарплаты</li>
