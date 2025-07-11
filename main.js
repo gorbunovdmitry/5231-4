@@ -10,7 +10,7 @@ function renderLanding() {
     <div class="landing">
       <img src="img/calendar.png" alt="Календарь" class="landing__img" />
       <div class="landing__content">
-        <div class="landing__title">Зарплата каждый день. Подключите бесплатно, платите только за использование</div>
+        <div class="landing__title">Зарплата каждый день</div>
         <div class="landing__desc">
           Подключите бесплатно, платите только за использование
         </div>
