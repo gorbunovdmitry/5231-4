@@ -1,5 +1,9 @@
 const app = document.getElementById('app');
 
+// Флаги для отправки событий только один раз за сессию
+let landingEventSent = false;
+let endPageEventSent = false;
+
 function renderLanding() {
   // Если уже была заглушка, не показываем лендинг
   if (localStorage.getItem('placeholderShown') === '1') {
@@ -46,6 +50,12 @@ function renderLanding() {
     </div>
   `;
   document.getElementById('sendBtn').onclick = renderPlaceholder;
+
+  // Отправляем событие просмотра экрана landing только один раз
+  if (!landingEventSent && typeof gtag === 'function') {
+    gtag('event', '5231_page_view_zkd_var4');
+    landingEventSent = true;
+  }
 }
 
 function renderPlaceholder() {
@@ -60,6 +70,12 @@ function renderPlaceholder() {
   `;
   // Очищаем историю, чтобы нельзя было вернуться назад
   history.replaceState(null, '', location.href);
+
+  // Отправляем событие просмотра финальной страницы только один раз
+  if (!endPageEventSent && typeof gtag === 'function') {
+    gtag('event', '5231_end_page_view_zkd_var4');
+    endPageEventSent = true;
+  }
 }
 
 renderLanding(); 
